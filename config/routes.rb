@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :calls
   resources :call_charges
   resources :subscriptions
   resources :packages

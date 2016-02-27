@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  called: MyString
+  duration: MyString
+  cost: 9.99
+  callCharges_id: 1
+
+two:
+  called: MyString
+  duration: MyString
+  cost: 9.99
+  callCharges_id: 1
