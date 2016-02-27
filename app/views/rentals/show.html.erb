@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @rental.title %>
+</p>
+
+<p>
+  <strong>Cost:</strong>
+  <%= @rental.cost %>
+</p>
+
+<p>
+  <strong>Skystore:</strong>
+  <%= @rental.skyStore_id %>
+</p>
+
+<%= link_to 'Edit', edit_rental_path(@rental) %> |
+<%= link_to 'Back', rentals_path %>
