@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Call Charges</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Total</th>
+      <th>Bill</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @call_charges.each do |call_charge| %>
+      <tr>
+        <td><%= call_charge.total %></td>
+        <td><%= call_charge.bill_id %></td>
+        <td><%= link_to 'Show', call_charge %></td>
+        <td><%= link_to 'Edit', edit_call_charge_path(call_charge) %></td>
+        <td><%= link_to 'Destroy', call_charge, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Call charge', new_call_charge_path %>

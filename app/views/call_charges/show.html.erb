@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @call_charge.total %>
+</p>
+
+<p>
+  <strong>Bill:</strong>
+  <%= @call_charge.bill_id %>
+</p>
+
+<%= link_to 'Edit', edit_call_charge_path(@call_charge) %> |
+<%= link_to 'Back', call_charges_path %>
