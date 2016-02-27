@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :buy_and_keeps
   resources :rentals
   resources :sky_stores
   resources :calls
