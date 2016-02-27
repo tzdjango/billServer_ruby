@@ -1,0 +1,25 @@
+<%= form_for(@sky_store) do |f| %>
+  <% if @sky_store.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@sky_store.errors.count, "error") %> prohibited this sky_store from being saved:</h2>
+
+      <ul>
+      <% @sky_store.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :total %><br>
+    <%= f.text_field :total %>
+  </div>
+  <div class="field">
+    <%= f.label :bill_id %><br>
+    <%= f.number_field :bill_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

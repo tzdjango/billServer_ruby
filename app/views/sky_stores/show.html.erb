@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Total:</strong>
+  <%= @sky_store.total %>
+</p>
+
+<p>
+  <strong>Bill:</strong>
+  <%= @sky_store.bill_id %>
+</p>
+
+<%= link_to 'Edit', edit_sky_store_path(@sky_store) %> |
+<%= link_to 'Back', sky_stores_path %>
