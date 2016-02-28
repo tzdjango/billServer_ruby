@@ -1,10 +1,15 @@
 class BillsController < ApplicationController
   before_action :set_bill, only: [:show, :edit, :update, :destroy]
 
+  require 'json'
+  require 'open-uri'
+
   # GET /bills
   # GET /bills.json
   def index
-    @bills = Bill.all
+    source = "http://safe-plains-5453.herokuapp.com/bill.json"
+    @bills = Bill.new(JSON.load(open(source)))
+    #@bills = Bill.all
   end
 
   # GET /bills/1

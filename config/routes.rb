@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :read_data
   resources :periods
   resources :buy_and_keeps
   resources :rentals
@@ -9,6 +10,8 @@ Rails.application.routes.draw do
   resources :packages
   resources :statements
   resources :bills
+
+  root 'bills#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

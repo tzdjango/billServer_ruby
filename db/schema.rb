@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160227171255) do
+ActiveRecord::Schema.define(version: 20160228095253) do
 
   create_table "bills", force: :cascade do |t|
     t.decimal  "total"
@@ -56,6 +56,12 @@ ActiveRecord::Schema.define(version: 20160227171255) do
     t.integer  "statement_id"
     t.datetime "created_at",   null: false
     t.datetime "updated_at",   null: false
+  end
+
+  create_table "read_data", force: :cascade do |t|
+    t.string   "data"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "rentals", force: :cascade do |t|
