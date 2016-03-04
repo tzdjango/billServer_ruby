@@ -12,14 +12,14 @@ Things you may want to cover:
 * Configuration
 
 * Database creation
-  rake db migrate
+  rake db:migrate RAILS_ENV=test
 
 * Database initialization
 
 * How to run the test suite
   1. Install rvm
   2. source ~/.rvm/scripts/rvm
-  3. rake db migrate
+  3. rake db:migrate RAILS_ENV=test
   4. rails s
   
   Open the web browser
